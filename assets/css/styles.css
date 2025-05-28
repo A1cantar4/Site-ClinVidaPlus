@@ -111,10 +111,12 @@ body {
 /* Overlay branco translúcido por cima da imagem */
 body::before {
   content: '';
-  position: absolute;
-  inset: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.95);
-  /* Transparência suave */
   z-index: -1;
 }
 
@@ -635,8 +637,20 @@ main {
   }
 
   .home__container {
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     justify-items: center;
+    gap: 2rem;
+  }
+
+  .home__data {
+    text-align: right;
+    justify-self: end;
+  }
+
+  .home__img {
+    justify-self: start;
   }
 
   .services__container,
@@ -717,7 +731,8 @@ main {
 }
 
 /*========== EVITAR BARRA HORIZONTAL EM TELAS PEQUENAS ==========*/
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -734,5 +749,31 @@ html, body {
   .about__img,
   .app__img {
     width: 240px;
+  }
+
+  .contact__container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .contact__data img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact__button {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .whatsapp-button {
+    width: 90%;
+    max-width: 300px;
+    justify-content: center;
+    padding: 0.8rem 1rem;
   }
 }
