@@ -105,3 +105,10 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+window.addEventListener('load', () => {
+  const homeSection = document.getElementById('home');
+  if (homeSection) {
+    homeSection.scrollIntoView({ behavior: 'smooth' });
+  }
+});
