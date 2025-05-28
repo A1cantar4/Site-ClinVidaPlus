@@ -684,3 +684,55 @@ main {
     height: 640px;
   }
 }
+
+/*========== AJUSTES PARA TELAS MUITO PEQUENAS (até 375px) ==========*/
+@media screen and (max-width: 375px) {
+  .home__title {
+    font-size: 1.8rem;
+  }
+
+  .home__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .menu__container,
+  .services__container,
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu__img {
+    width: 80px;
+  }
+
+  .app__img {
+    width: 180px;
+  }
+
+  .button,
+  .whatsapp-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/*========== EVITAR BARRA HORIZONTAL EM TELAS PEQUENAS ==========*/
+html, body {
+  overflow-x: hidden;
+}
+
+/*========== REDUZIR PADDING EM MOBILE ==========*/
+@media screen and (max-width: 576px) {
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .section {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .about__img,
+  .app__img {
+    width: 240px;
+  }
+}
