@@ -7,7 +7,7 @@ Uma landing page moderna e responsiva desenvolvida com HTML, CSS e JavaScript pu
 
 ## 📸 Prévia
 
-![Screenshot](assets/screenshots/screenshot1.png)
+![Screenshot](https://raw.githubusercontent.com/A1cantar4/Site-ClinVidaPlus/main/screenshots/screenshot1.png)
 
 ---
 
